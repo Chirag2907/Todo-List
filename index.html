@@ -16,7 +16,7 @@
         <h3>Description</h3>
         <textarea placeholder="Enter description (optional)" name="desc" id="desc" rows="4"></textarea>
         <br>
-        <button class="add btn btn-success" id="adds">Add to List</button>
+        <button onclick="shake()" class="add btn btn-success" id="adds">Add to List</button>
         <h2>My todos</h2>
         <div id="todoBody"></div>
     </div>
@@ -26,6 +26,17 @@
         </div>
         <br>
         <i class="fa-solid fa-check"></i>
+    <script>
+        function shake(){
+            var t = document.getElementById('title').value;
+            if(t == ""){
+                title.classList.add("face");
+                setTimeout(function(){
+                    title.classList.remove("face");
+                },500);
+            }
+        }
+    </script>
     <script src="https://kit.fontawesome.com/225bf2b1eb.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>

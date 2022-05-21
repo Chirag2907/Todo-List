@@ -84,8 +84,17 @@ document.getElementById("top").addEventListener("click",function(){
 document.getElementById("adds").addEventListener("click", function(){
     var x = document.getElementById("title").value;
     var y = document.getElementById("desc").value;
+    x = x.trim();
+    y = y.trim();
     if(x===''){
-        title.classList.add("face");
+        document.getElementById("title").value = '';
+        var t = document.getElementById('title').value;
+        if(t == ""){
+            title.classList.add("face");
+            setTimeout(function(){
+                title.classList.remove("face");
+            },500);
+        }
         return;
     }
     if(y===''){
