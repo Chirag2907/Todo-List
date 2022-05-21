@@ -94,3 +94,22 @@ i:hover{
       transform: translate3d(4px, 0, 0);
     }
   }
+
+@media screen and (max-width: 520px){
+    .contents{
+        width: 80%;
+    }
+}
+    
+@media screen and (max-width: 400px){
+    .card-body{
+        padding: 0.3rem;
+    }
+    .icon{
+        size: 50%;
+    }
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+}

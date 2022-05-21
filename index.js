@@ -16,7 +16,7 @@ function displayTodos(){
                <div class="row my-2">
                  <div class="col-10 ">
                 <button onClick="{striker(${element[2]})}" id="cards" class="card-body complete">
-                <h5 class="card-title" id="card-t"><i class="fa-solid fa-badge-check"></i>${element[0]}</h5>
+                <h5 class="card-title" id="card-t"><i class="fa-solid fa-badge-check icon"></i>${element[0]}</h5>
                 <p class="card-text" id="card-d">${element[1]}</p>
                 </button>
             </div>
