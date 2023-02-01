@@ -111,3 +111,9 @@ i:hover{
         padding: 0;
     }
 }
+.delete{
+    color: red;
+    position: relative;
+    top:-1rem;
+    cursor: pointer;
+}
