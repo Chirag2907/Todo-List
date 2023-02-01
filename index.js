@@ -22,7 +22,7 @@ function displayTodos(){
             </div>
         
             <div class="col">
-                <i onClick="{deletion(${element[2]})}" class="my-5 fa-solid fa-trash-can fa-2xl hh"></i>
+                <div onClick="{deletion(${element[2]})}" class="delete my-5 fa-solid fa-trash-can fa-2xl">Delete</div>
             </div>
             </div>
             </div>
